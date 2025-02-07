@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+  <title>MOJISANNNNNN</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 20px 40px;
+      background-color: #ff16ff;
+      color: rgb(226, 219, 213);
+      border: none;
+      border-radius: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 10px;
+      transition: all;ijoihjbuhbhijhbhvhuiuoihvughiuoohiioiojhijguhioi0uohighiu
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤧💗Welcome, MOJISANNN!🤧💗</h1>
+  <button onclick="startInvitation()">CLICK ME!!</button>
+
+  <script>
+    function startInvitation() {
+      document.body.innerHTML = `
+        <h1>Hey there!</h1>
+        <p>อันนี้เป็นของขวัญชิ้นเเรกของผมที่ทำไห้พี่นะค้าบบบบ >u< (ตั้งใจทำมากๆเลยนะคับ😝💐)</p>
+        <button onclick="question1()">เริ่มเลย!</button>
+      `;
+    }
+
+    function question1() {
+      document.body.innerHTML = `
+        <h1>Question 1</h1>
+        <p>🤧มีอะไรในใจอยากจะบอกคับ อยากรู้มั้ย!?💝</p>
+        <button onclick="question2()">อยากรู้สิคะ🤧🌹</button>
+        <button onclick="question3()">พี่อยากบอกมากกว่าอ่ะค่ะ🤩💖</button>
+      `;
+    }
+
+    function question2() {
+      document.body.innerHTML = `
+        <h1>💝โทรมาหาหน่อยสิคับ อยากอ้อนจัง💝</h1>
+        <p>พี่โมจิค้าบบ~ 🤧💗  
+     ผมแค่อยากจะบอกว่าผมรู้สึกโชคดีมากที่มีพี่เข้ามาในชีวิต 🌷✨  
+     ทุกช่วงเวลาที่เราได้ใช้ด้วยกัน ทำให้ผมมีความสุขมากกว่าที่จะอธิบายเป็นคำพูดได้  
+     เสียงหัวเราะ รอยยิ้ม และความทรงจำทั้งหมดที่เราสร้างขึ้นมาด้วยกัน  
+    จะเป็นสิ่งที่ผมเก็บไว้ในใจเสมอ  
+
+    ขอบคุณที่ทำให้ผมรู้ว่าการมีใครสักคนที่เข้าใจและอยู่ข้างๆ มันมีค่ามากแค่ไหน  
+    ขอบคุณสำหรับทุกสิ่งที่พี่ทำให้—ทั้งเรื่องเล็กๆ และเรื่องที่พี่อาจไม่รู้ว่ามันสำคัญสำหรับผมมากแค่ไหน  
+
+    ไม่ว่าจะมีอะไรเกิดขึ้นต่อจากนี้  
+     พี่จะเป็นหนึ่งในช่วงเวลาที่สวยงามที่สุดในชีวิตผมเสมอ 💖  
+      (หวังว่าพี่โมจิจะรับรู้ถึงความรู้สึกของผมนะค้าบบบ 😆💐✨❤️‍🔥)
+          </p>
+        <button onclick="afterall()">อ่านเเล้ว!</button>
+      `;
+    }
+
+    function question3() {
+      document.body.innerHTML = `
+        <h1>Question 3</h1>
+        <p>อยากบอกอะไรกับผมมั้ยครับ? 💖</p>
+        <textarea id="userMessage" placeholder="พิมพ์ข้อความของพี่ตรงนี้เลยค้าบ..."></textarea>
+        <button onclick="copyToClipboard()">Next</button>
+      `;
+    }
+
+    function copyToClipboard() {
+      const userMessage = document.getElementById("userMessage").value;
+
+      if (userMessage.trim() === "") {
+        alert("พิมพ์อะไรมาก่อนสิค้าบบบ~ 🤧💗");
+        return;
+      }
+
+      navigator.clipboard.writeText(userMessage).then(() => {
+        alert("ข้อความถูกคัดลอกไปที่คลิปบอร์ดแล้ว(ส่งมาไห้ในเเชทเลยค้าบ)! 🎉");
+        showResult();
+      }).catch(err => {
+        alert("เกิดข้อผิดพลาดในการคัดลอก 😢: " + err);
+      });
+    }
+
+    function showResult() {
+      document.body.innerHTML = `
+        <h1>Thank you! 💖</h1>
+        <p>พี่ส่งข้อความมาให้แล้ว ผมจะเก็บไว้ในใจเลยนะค้าบบบ~ 🤧💗</p>
+        <button onclick="window.location.reload()">กลับไปหน้าแรก</button>
+        <a href=""></a>
+      `;
+    }
+    function afterall() {
+      document.body.innerHTML = `
+      <h1>คิดถึงน้าาาา🫶</h1>
+      <p>💗โทรมาหาหน่อยนะค้าบบบบ💗</p>
+      <button onclick="window.location.reload()">กลับไปหน้าแรก</button>
+      `;
+    }
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.instagram.com/dorre_ch1/followers/"><p>
+  instagram</p>
+</a>
+
+<p>#รักพี่ที่สุดเลยนะคั๊บ🥹💞#</p>
